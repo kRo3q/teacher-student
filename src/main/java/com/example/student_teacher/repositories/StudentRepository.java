@@ -13,7 +13,7 @@ public interface StudentRepository extends PagingAndSortingRepository<Student, L
 
     Student findBySurname(@Param("surname") String studentSurname);
 
-    Student save(Student student);
+    void save(Student student);
 
     void deleteById(Long id);
 
